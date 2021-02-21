@@ -1,0 +1,438 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../../fonts/Gilroy-Bold.woff2") format("woff2"), url("../../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../../fonts/Gilroy-Regular.woff2") format("woff2"), url("../../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../../fonts/Gilroy-Medium.woff2") format("woff2"), url("../../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+body {
+	line-height: 1;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+/* ------------------ */
+
+body {
+	color: #fff;
+	background-color: #111428;
+	font-family: "Gilroy";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21px;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/* HEADER */
+
+.header {
+	width: 100%;
+	max-height: 100px;
+	box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__inner {
+}
+
+.logo {
+	display: inline-block;
+	margin: 0 60px 0 0;
+}
+
+a.logo__link {
+	color: #fff;
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* MENU */
+
+.header__menu {
+	display: inline-block;
+}
+
+.header__list {
+	font-size: 0;
+	display: inline-block;
+}
+
+.header__list > li {
+	position: relative;
+	display: inline-block;
+	margin: 0 26px 0 0;
+	padding: 0 14px 0 0;
+}
+
+.header__link::after {
+	position: absolute;
+	content: "";
+	top: 37px;
+	right: 0;
+	width: 12px;
+	height: 12px;
+	background: url(../../img/check-bottom.png) center/ 12px no-repeat;
+}
+
+.header__list > li:hover .header__sub-list {
+	display: block;
+}
+
+.header__list > li:hover .header__link {
+	color: #64b369;
+}
+
+.header__list:last-child {
+	margin-right: 0;
+}
+
+.header__link {
+	font-size: 18px;
+	color: #fff;
+	padding: 30px 0;
+	display: inline-block;
+}
+
+.header__sub-list {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 150px;
+	background-color: #337ab7;
+	padding: 15px;
+	display: none;
+	border-radius: 5px;
+}
+
+.header__sub-list li {
+	text-align: center;
+}
+
+.header__sub-link {
+	font-size: 14px;
+	color: #fff;
+	padding: 10px;
+	display: block;
+}
+
+.header__sub-link:hover {
+	background-color: #64b369;
+	border-radius: 5px;
+}
+
+a.header__sub-link:active {
+	color: #2f5e86;
+}
+
+.header__form {
+	display: inline-block;
+	margin: 0 25px 0 0;
+}
+
+.header__input {
+	width: 574px;
+	height: 41px;
+	padding: 20px 15px;
+	background: #111428;
+	border: 1px solid #a3a3a3;
+	box-sizing: border-box;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+}
+
+.header__input:focus {
+	box-shadow: 1px 1px 7px 4px #2f5e86;
+}
+
+.header__label {
+	position: relative;
+}
+
+.header__label::after {
+	position: absolute;
+	content: "";
+	top: 2px;
+	right: 12px;
+	width: 18px;
+	height: 18px;
+	background: url(../../img/search.png) center/ 18px no-repeat;
+}
+
+.header__like-link,
+.header__avatar-link,
+.header__check-link {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.header__like-link {
+	margin-right: 15px;
+}
+
+/* MAIN */
+
+/* INDEX */
+
+.index {
+	padding: 25px 0 0 0;
+}
+
+.index p {
+	margin: 0 0 30px 0;
+	font-size: 14px;
+	line-height: 16px;
+	color: #a3a3a3;
+}
+
+.index__inner {
+	max-width: 385px;
+	margin: 0 auto;
+	padding: 0 0 60px 0;
+}
+
+.title {
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 46px;
+	margin: 0 0 40px 0;
+	text-align: center;
+}
+
+.form__input {
+	margin: 0 0 30px 0;
+}
+
+.form__group span {
+	display: inline-block;
+	font-size: 18px;
+	margin: 0 74px 0 5px;
+}
+
+.input {
+	width: 384px;
+	height: 50px;
+	background: #ffffff;
+	border-radius: 5px;
+	line-height: 21px;
+	color: #777777;
+	padding: 15px 20px;
+	outline: none;
+}
+
+.input:focus {
+	box-shadow: 1px 1px 7px 4px #2f5e86;
+}
+
+.checkbox {
+	margin: 0 0 30px 0;
+	position: relative;
+}
+
+.checkbox__label {
+	cursor: pointer;
+	padding: 0 0 0 25px;
+	margin: 0 10px 0 0;
+}
+
+.checkbox__label::before {
+	position: absolute;
+	content: "";
+	top: 4px;
+	left: 0;
+	height: 0;
+	width: 15px;
+	height: 15px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.checkbox__label::before:focus {
+	box-shadow: 1px 1px 7px 4px #2f5e86;
+}
+
+.checkbox__input {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+	background: #fff url(../../img/check.png) center/ 15px no-repeat;
+}
+
+.checkbox:focus {
+	box-shadow: 1px 1px 7px 3px #2f5e86;
+}
+
+a.form__link {
+	color: #64b369;
+}
+
+a.form__link:hover {
+	color: #3e6c41;
+}
+
+a.form__link:active {
+	color: #2f5e86;
+}
+
+.btn {
+	width: 384px;
+	height: 50px;
+	background: #337ab7;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #fff;
+	margin: 0 0 30px 0;
+	outline: none;
+}
+
+.btn:hover {
+	background-color: #2f5e86;
+}
+
+.social {
+	text-align: center;
+}
+
+.social p {
+	margin: 0 0 20px 0;
+}
+
+.social__link img {
+	margin: 0 30px 30px 0;
+	vertical-align: middle;
+}
+
+.help {
+	text-align: center;
+}
+
+.help span {
+	margin: 0 10px 0 0;
+}
+
+a.contacts__link {
+	color: #fff;
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0 20px 0 0;
+}
+
+/* FOOTER */
+
+.footer {
+	margin: 0 0 100px 0;
+}
+
+.footer__inner {
+	padding: 70px 0 0 0;
+	border-top: 1px solid #fff;
+	text-align: center;
+}
+
+.footer img {
+	margin: 0 40px 60px 0;
+	vertical-align: middle;
+}
+
+.footer span {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0 0 20px 0;
+}
+
+.contacts {
+	text-align: center;
+}
+
+a.contacts__link {
+	color: #fff;
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0 20px 0 0;
+}
+
+a.contacts__link:hover {
+	color: #3e6c41;
+}
+
+a.contacts__link:active {
+	color: #2f5e86;
+}
