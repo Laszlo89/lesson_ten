@@ -198,6 +198,9 @@ a.header__sub-link:active {
 }
 
 .header__input {
+	font-family: "Gilroy";
+	font-size: 16px;
+	line-height: 19px;
 	width: 574px;
 	height: 41px;
 	padding: 20px 15px;
@@ -279,6 +282,8 @@ a.header__sub-link:active {
 	height: 50px;
 	background: #ffffff;
 	border-radius: 5px;
+	font-family: "Gilroy";
+	font-size: 18px;
 	line-height: 21px;
 	color: #777777;
 	padding: 15px 20px;
